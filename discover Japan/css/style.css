@@ -50,11 +50,13 @@ html {
 .wrapper {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .wrapper-full {
     max-width: 1262px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section-title {
@@ -81,6 +83,8 @@ html {
     top: 0;
     left: 0;
     width: 100%;
+    padding-bottom: 20px;
+    z-index: 999;
 }
 
 .header_active {
@@ -121,6 +125,34 @@ html {
     opacity: 75%;
 }
 
+.header__burger {
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+}
+
+.burger__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_first {
+    top: 0;
+}
+
+.burger__line_second {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line_third {
+    bottom: 0;
+}
 /* header styles end */
 
 /* intro styles start */
@@ -508,3 +540,86 @@ html {
     background: #1154ac;
 }
 /* Top styles end */
+
+/* Videos styles start */
+
+.videos {
+    width: 100%;
+}
+
+.videos__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__item {
+    padding-top: 56.25%;
+}
+
+.video__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Videos styles end */
+
+/* Footer styles start */
+
+.footer {
+    background: rgba(14, 29, 40, 1);
+    padding: 119px 0;
+}
+
+.footer__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    width: 50%;
+}
+
+.footer__nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__menu-title {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer__menu-item {
+    margin-bottom: 3px;
+}
+
+.footer__menu-link {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
+    opacity: 75%;
+}
+/* Footer styles end */
+
+/* Media start */
+
+@media screen and(max-width: 767px) {
+    .header__burger {
+        display: block;
+    }
+}
+
+/* Media end */
