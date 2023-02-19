@@ -630,7 +630,7 @@ html {
         z-index: 10;
         padding: 75px;
         position: fixed;
-        transition: 0.2s;
+        transition: 0.2s all linear;
         transform: translateX(100%);
     }
 
@@ -677,6 +677,37 @@ html {
 
     .header__nav-close-line:last-child {
         transform: translateY(-50%) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .benefits {
+        margin-bottom: 75px;
+    }
+    
+    .benefits__card {
+        margin-bottom: 60px;
+    }
+
+    .search-form__field {
+        margin-bottom: 25px;
+    }
+
+    .search-form__submit {
+        margin-bottom: 25px;
+    }
+
+    .benefits__cards {
+        padding: 0 15px;
+        grid-column-gap: 35px;
+    }
+
+    .benefits__title {
+        padding: 55px 15px ;
+    }
+
+    .benefits__wreapper {
+        box-shadow: none;
     }
 }
 
